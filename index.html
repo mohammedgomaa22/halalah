@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق هلله - HALALAH</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                primary: '#ef313e',
+                dark: '#2f2e4a',
+                light: '#6a6c6d',
+                main_bg: '#ef313e50',
+                }
+            }
+            }
+        }
+    </script>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <!-- ********** Start Navbar ********** -->
+    <nav class="h-[100px] fixed top-0 w-full z-50 border-b shadow-sm flex items-center bg-[#ffffff]">
+        <div class="container flex justify-between items-center">
+            <div class="flex gap-8 justify-between items-center flex-1">
+                <!-- Logo -->
+                <div class="logo flex gap-2 relative h-[120px] w-[100px] rounded-md">
+                    <a href="#">
+                        <img src="./assets/images/logo.png" alt="logo" class="w-full h-full object-cover" loading="lazy">
+                    </a>
+                </div>
+                <div class="row flex justify-between items-center">
+                    <!-- UL Navbar -->
+                    <div class="ul flex gap-8 items-center py-4">
+                        <!-- Nav in full screen -->
+                        <div class="flex gap-16">
+                            <ul class="hidden 2xl:flex gap-8 font-medium text-white items-center">
+                                <li>
+                                    <a href="#"
+                                        class="text-primary relative font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8] nav-active"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fa-solid fa-house"></i>
+                                        الرئيسية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#support-and-assistance"
+                                        class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fas fa-headset"></i>
+                                        الدعم والمساعدة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#terms-and-conditions"
+                                        class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fab fa-buffer"></i>
+                                        الشروط والأحكام
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#frequently-asked-questions"
+                                        class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fas fa-question"></i>
+                                        الأسئلة الشائعة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact-us"
+                                        class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                                        aria-label="Read more about Seminole tax hike" nav-active>
+                                        <i class="fas fa-message"></i>
+                                        تواصل معنا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Nav in Mobile -->
+                        <ul class="sidebar fixed h-full w-[280px] left-0 top-[100px] -translate-x-[100%] flex flex-col items-center py-5 px-5 bg-white text-dark duration-500 shadow-md">
+    
+                            <button class="close-sidebar bg-dark text-white h-7 w-7 rounded-full ml-auto">X</button>
+    
+                            <!-- Logo -->
+                            <div class="logo flex items-center gap-2 relative h-32 w-32 mb-7">
+                                <a href="#">
+                                    <img src="./assets/images/logo.png" alt="logo" class="w-full h-full object-contain"
+                                        loading="lazy">
+                                </a>
+                            </div>
+    
+    
+                            <li>
+                                <a href="#" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#support-and-assistance" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    الدعم والمساعدة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#terms-and-conditions"
+                                    class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#frequently-asked-questions" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    الأسئلة الشائعة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact-us" class="px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                    aria-label="Read more about Seminole tax hike">
+                                    تواصل معنا
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Toggler -->
+            <div class="cursor-pointer 2xl:hidden w-[30px] text-gray-700 text-2xl">
+                <span class="toggler fas fa-bars block h-full w-full"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- ********** End Navbar ********** -->
+
+    <main class="mt-[100px]">
+
+        <!-- ********** Start Header ********** -->
+        <header class="home flex items-center relative bg-top bg-cover bg-no-repeat | before:content[''] before:absolute before:left-0 before:top-0 before:h-full before:w-full" style="background-image: url(./assets/images/2.webp);">
+            <div class="container relative">
+                <div>
+                    <!-- Info -->
+                    <div class="info flex-1 text-center lg:text-right">
+                        <h2 class="text-4xl md:text-5xl font-extrabold max-w-2xl mb-5">
+                            <span class="text-primary" style="line-height: 1.4;">تطبيق هلله - HALALAH</span>
+                        </h2>
+                        <p class="text-lg md:text-lg font-medium text-dark max-w-2xl leading-[1.8]"
+                            style="line-height: 2;">
+                            هي إحدى الوكالات الرائدة في مجال السياحة والسفر في المنطقة. تأسست بهدف توفير خدمات مميزة
+                            للمسافرين بغرض العمل أو الترفيه
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP -->
+            <img src="./assets/images/i-1.png" alt="icon-h-1" height="74" width="74" class="absolute top-20 right-5">
+            <img src="./assets/images/i-2.png" alt="icon-h-2" height="74" width="74" class="absolute top-10 right-1/2 translate-x-1/2">
+            <img src="./assets/images/i-3.png" alt="icon-h-3" height="74" width="74" class="absolute top-20 left-5">
+            <!-- CENTER -->
+            <img src="./assets/images/logo.png" alt="logo-h" height="200" width="200" class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 opacity-10">
+            <!-- BOTTOM -->
+            <img src="./assets/images/i-1.png" alt="icon-h-1" height="74" width="74" class="absolute bottom-20 right-5">
+            <img src="./assets/images/i-2.png" alt="icon-h-2" height="74" width="74" class="absolute bottom-10 right-1/2 translate-x-1/2">
+            <img src="./assets/images/i-3.png" alt="icon-h-3" height="74" width="74" class="absolute bottom-20 left-5">
+        </header>
+
+        <!-- ********** End Header ********** -->
+        
+        <!-- ********** Start  support-and-assistance ********** -->
+        <section id="support-and-assistance">
+            <!-- main title -->
+            <h3 class="main-title w-fit relative mx-auto px-5 py-2 mb-10 font-semibold text-2xl text-white group">
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
+                <span
+                    class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
+                <span
+                    class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                <span class="relative">الدعم والمساعدة</span>
+            </h3>
+            <div class="container py-16 bg-gradient-to-r from-primary to-dark">
+                <p class="paragraph text-xl md:text-2xl text-center font-semibold leading-10 max-w-[550px] mx-auto text-white">
+                    يمكنك التواصل مع الدعم والمساعدة في حال ظهور أي مشكلة خلال استخدامك للتطبيق على البريد الالكتروني أو على
+                    الواتس اب
+                </p>
+
+                <div class="row mt-5 flex justify-center gap-3">
+                    <div class="email">
+                        <a href="mailto:info@cody.center" class="insta text-white text-2xl cursor-pointer bg-[#dd4b39] hover:opacity-80 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="https://wa.me/+966580871132" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#25d366] hover:opacity-80 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ********** End support-and-assistance ********** -->
+
+        <!-- ********** Start  terms-and-conditions ********** -->
+        <section id="terms-and-conditions" class="py-16">
+            <!-- main title -->
+            <h3 class="main-title w-fit relative mx-auto px-5 py-2 mb-10 font-semibold text-2xl text-white group">
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
+                <span
+                    class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
+                <span
+                    class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                <span class="relative">الشروط والأحكام</span>
+            </h3>
+            <div class="container">
+                <div class="row grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 justify-center">
+
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/number-13.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                الأهلية
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                يجب أن يكون عمرك 13 سنة على الأقل لاستخدام هذا التطبيق.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u2.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                الاستخدامات المسموح بها
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                يمكنك استخدام التطبيق لأغراض شخصية وغير تجارية، مثل تصفح العروض واستردادها.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u3.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                الاستخدامات المحظورة
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                يُمنع استخدام التطبيق لأي غرض غير قانوني، أو لنشر الفيروسات، أو للوصول غير المصرح به إلى حسابات الآخرين، أو لأي نشاط
+                                يعطل عمل التطبيق.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u4.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                حقوق الملكية الفكرية
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                جميع المحتويات والعلامات التجارية الموجودة في التطبيق مملوكة لشركة هللة كوبونات أو الجهات المرخصة لها. أنت تحصل على
+                                ترخيص محدود وغير حصري لاستخدام التطبيق.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u5.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                روابط وعروض الجهات الخارجية
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                قد يحتوي التطبيق على روابط لمواقع أخرى. نحن لسنا مسؤولين عن محتوى هذه المواقع.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u6.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                إخلاء المسؤولية والحد من المسؤولية
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                نحن نقدم التطبيق "كما هو"، دون أي ضمانات. نحن لسنا مسؤولين عن أي أضرار قد تنتج عن استخدامك للتطبيق.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u7.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                التعويض
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                أنت توافق على تعويض شركة هللة كوبونات عن أي خسائر قد تتعرض لها نتيجة استخدامك غير المشروع للتطبيق.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u8.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                القوانين الحاكمة
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                تحكم قوانين المملكة العربية السعودية في هذه الشروط والأحكام.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u9.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                إنهاء الخدمة
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                نحتفظ بالحق في إنهاء حسابك أو تعطيل الوصول إلى التطبيق في أي وقت.
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u10.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                معلومات الاتصال
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                لأي استفسار، يمكنك التواصل معنا عبر البريد الإلكتروني: info@cody.center
+                            </p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="col leading-8 text-2xl text-center font-bold p-3 rounded-xl relative overflow-hidden flex gap-3 flex-col justify-center items-center py-3 transition-all bg-[#f8f8f8]">
+                        <div class="content relative w-full text-gray-700 transition-colors duration-700 ease-in-out p-3 rounded-xl overflow-hidden flex gap-3 flex-col justify-center items-center">
+                            <div class="icon h-16 w-16 mb-2">
+                                <img src="./assets/images/u11.png" alt="paints">
+                            </div>
+                            <h4 class="text-center">
+                                سياسة الخصوصية
+                            </h4>
+                            <p class="text-sm font-medium text-gray-500" style="line-height: 1.7;">
+                                يرجى الاطلاع على سياسة الخصوصية الخاصة بنا لمعرفة كيفية جمعنا ومعالجتنا لبياناتك الشخصية.
+                            </p>
+                        </div>
+                    </div>
+                            
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ********** End  terms-and-conditions ********** -->
+
+        <!-- ********** Start frequently-asked-questions ********** -->
+        <section id="frequently-asked-questions" class="py-16">
+            <!-- main title -->
+            <h3 class="main-title w-fit relative mx-auto px-5 py-2 mb-10 font-semibold text-2xl text-white group">
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
+                <span
+                    class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
+                <span
+                    class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                <span class="relative">الأسئلة الشائعة</span>
+            </h3>
+            <div class="container">
+
+                <div class="space-y-4">
+                    <details class="group border-s-4 border-red-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-lg font-medium text-gray-900">
+                                هل يمكن لأصحاب المتاجر إضافة كوبوناتهم الخاصة لدى هلله ؟
+                            </h2>
+                
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+                
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                            نعم ، نوفر لأصحاب المتاجر هذي الميزة ، يمكنك إضافة كوبونك
+                            عن طريق " الشركاء " الموجودة اسفل التطبيق
+                            بعدها قم بالنقر على تواصل معنا على البريد الالكتروني وسوف نقوم ب إرسال جدول لتعبئة البيانات المطلوبة
+                        </p>
+                    </details>
+                
+                    <details class="group border-s-4 border-red-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-lg font-medium text-gray-900">
+                                هل تطبيق هلله مجاني ؟
+                            </h2>
+                
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+                
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                            نعم ، تطبيق هلله مجاني بكامل المميزات المتاحة لا يوجد عليها رسوم.
+                        </p>
+                    </details>
+                
+                    <details class="group border-s-4 border-red-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-lg font-medium text-gray-900">
+                                هل كوبونات هلله متاحه في جميع الدول ؟
+                            </h2>
+                
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+                
+                        <p class="mt-4 leading-relaxed text-gray-700">
+                            حاليا نقدم الكوبونات الخاصة بجميع الدول العربية ، يمكن للمستخدم من الوصول للكوبونات الخاصة بمنطقته عند خانة المزيد
+                            الموجودة أسفل التطبيق بعدها الدول وقم باختيار الدولة المرغوبة.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- ********** End frequently-asked-questions ********** -->
+
+        <!-- ********** Start Contact us ********** -->
+        <section id="contact-us" class="py-16 px-3">
+            <!-- main title -->
+            <h3 class="main-title w-fit relative mx-auto px-5 py-2 mb-10 font-semibold text-2xl text-white group">
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
+                <span
+                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
+                <span
+                    class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
+                <span
+                    class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                <span class="relative">تواصل معنا</span>
+            </h3>
+            <div class="form p-5 md:p-5 rounded-xl shadow flex-1 text-center lg:text-left duration-500 md:max-w-[600px] mx-auto border">
+                <input type="text" id="fullName" name="fullName" placeholder="الاسم بالكامل" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300" />
+                <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300" />
+                <input type="number" id="whatsapp" name="whatsapp" placeholder="رقم الواتساب" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300" />
+                <textarea rows="4" name="message" id="message" placeholder="تفاصيل المشكلة" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300"></textarea>
+
+
+                <div class="flex items-center justify-center w-full">
+                    <label for="file" class="flex flex-col items-center justify-center w-full h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">حمل صورة المشكلة</span></p>
+                        </div>
+                        <input id="file" type="file" class="hidden" />
+                    </label>
+                </div>
+
+
+                <button type="submit" onclick="sendMessToWhatsapp()" class="w-full bg-gradient-to-r from-primary to-dark text-white mt-3 rounded text-xl duration-300 border px-3 py-2 mx-auto"
+                    data-text="btn_send">إرسال</button>
+            </div>
+
+        </section>
+        <!-- ********** End Contact us ********** -->
+
+        <section id="link-pro" class="py-14 relative overflow-hidden bg-gradient-to-r from-primary to-dark">
+            <div class="container">
+        
+                <p class="paragraph text-2xl text-center font-semibold leading-7 max-w-[600px] mx-auto text-white">
+                    مـاذا تنتظــر !
+                    <span class="block mt-1 leading-9">
+                        قم بتحميل التطبيق الآن واستمتع بمزاياه الفريدة
+                    </span>
+                </p>
+        
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block mx-auto w-fit">
+                    <button class="btn-buy w-44 mt-5 py-2 rounded-lg font-semibold text-white bg-primary hover:bg-transparent transition-all border border-primary" name="">
+                        احصل عليه
+                    </button>
+                </a>
+        
+            </div>
+        </section>
+
+        
+
+
+    </main>
+
+    <!-- ********** Start Footer ********** -->
+    <footer class="">
+        <div class="foot px-5 py-5 text-primary">
+            <p class="w-fit mx-auto">جميع الحقوق محفوظة لموقع هلله 2024</p>
+        </div>
+    </footer>
+    <!-- ********** End Footer ********** -->
+    
+
+    <!-- Start JS Files -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

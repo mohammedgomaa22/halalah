@@ -34,7 +34,7 @@ function sendMail() {
         email: document.getElementById("email").value,
         whatsapp: document.getElementById("whatsapp").value,
         message: document.getElementById("message").value,
-        file: document.getElementById("file").files[0].name,
+        file: document.getElementById("file").files[0],
     }
     // -----------
     const serviceID = "service_3x8kvi7";

@@ -27,6 +27,18 @@
             }
         }
     </script>
+    <!-- ------------------- -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "k3mJRFA8CphnBkLfS",
+                });
+            })();
+    </script>
+    <!-- ------------------- -->
+
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -501,14 +513,10 @@
         <section id="contact-us" class="py-16 px-3">
             <!-- main title -->
             <h3 class="main-title w-fit relative mx-auto px-5 py-2 mb-10 font-semibold text-2xl text-white group">
-                <span
-                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
-                <span
-                    class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
-                <span
-                    class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
-                <span
-                    class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+                <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-primary group-hover:bg-primary group-hover:skew-x-12"></span>
+                <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-primary group-hover:bg-primary group-hover:-skew-x-12"></span>
+                <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-primary -rotate-12"></span>
+                <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
                 <span class="relative">تواصل معنا</span>
             </h3>
             <div class="form p-5 md:p-5 rounded-xl shadow flex-1 text-center lg:text-left duration-500 md:max-w-[600px] mx-auto border">
@@ -528,13 +536,12 @@
                             </svg>
                             <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">حمل صورة المشكلة</span></p>
                         </div>
-                        <input id="file" type="file" class="hidden" />
+                        <input id="file" type="file" name="file" class="hidden" />
                     </label>
                 </div>
 
 
-                <button type="submit" onclick="sendMessToWhatsapp()" class="w-full bg-gradient-to-r from-primary to-dark text-white mt-3 rounded text-xl duration-300 border px-3 py-2 mx-auto"
-                    data-text="btn_send">إرسال</button>
+                <button type="submit" onclick="sendMail()" class="w-full bg-gradient-to-r from-primary to-dark text-white mt-3 rounded text-xl duration-300 border px-3 py-2 mx-auto cursor-pointer">إرسال</button>
             </div>
 
         </section>
